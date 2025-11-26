@@ -1,70 +1,70 @@
-# TaskApi
-?? TaskApi � API de Gerenciamento de Tarefas (.NET 8)
+﻿# TaskApi
+📘 TaskApi – API de Gerenciamento de Tarefas (.NET 8)
 
 Uma API REST simples desenvolvida em .NET 8, usando Entity Framework Core e SQLite.
-Criada para demonstrar dom�nio de:
+Criada para demonstrar domínio de:
 
 Estrutura de APIs REST
 CRUD completo
-Boas pr�ticas com controllers
+Boas práticas com controllers
 EF Core + Migrations
 Uso do DbContext
-Documenta��o com Swagger
+Documentação com Swagger
 
 A API permite criar, listar, atualizar e deletar tarefas.
 
-?? Tecnologias Utilizadas
+🚀 Tecnologias Utilizadas
 .NET 8 Web API
 Entity Framework Core
 SQLite
 Swagger / OpenAPI
 
-?? Estrutura do Projeto
+📂 Estrutura do Projeto
 TaskApi/
- ??? Controllers/
- ?    ??? TasksController.cs
- ??? Data/
- ?    ??? AppDbContext.cs
- ??? Migrations/
- ??? Models/
- ?    ??? TaskItem.cs
- ??? appsettings.json
- ??? Program.cs
- ??? TaskApi.csproj
+ ├── Controllers/
+ │    └── TasksController.cs
+ ├── Data/
+ │    └── AppDbContext.cs
+ ├── Migrations/
+ ├── Models/
+ │    └── TaskItem.cs
+ ├── appsettings.json
+ ├── Program.cs
+ └── TaskApi.csproj
 
-?? Como Executar o Projeto
+▶️ Como Executar o Projeto
 1. Restaurar pacotes: dotnet restore
 2. Aplicar migrations: dotnet ef database update
 3. Rodar o servidor: dotnet run
 
-?? Swagger dispon�vel em:
+📌 Swagger disponível em:
 https://localhost:7180/swagger
 
-?? Endpoints Principais
-?? GET /tasks
+🧪 Endpoints Principais
+✔️ GET /tasks
 Retorna todas as tarefas.
 
-?? GET /tasks/{id}
-Retorna uma tarefa espec�fica.
+✔️ GET /tasks/{id}
+Retorna uma tarefa específica.
 
-?? POST /tasks
+✔️ POST /tasks
 Cria uma nova tarefa.
 
-?? PUT /tasks/{id}
+✔️ PUT /tasks/{id}
 Atualiza uma tarefa.
 
-?? DELETE /tasks/{id}
+✔️ DELETE /tasks/{id}
 Remove a tarefa.
 
-?? Exemplo de JSON (POST/PUT)
+📦 Exemplo de JSON (POST/PUT)
 {
   "title": "Estudar C#",
   "isCompleted": true
 }
 
-?? Licen�a
-Projeto sob licen�a MIT. Sinta-se � vontade para usar e modificar!
+📝 Licença
+Projeto sob licença MIT. Sinta-se à vontade para usar e modificar!
 
-? Autor
+✨ Autor
 Vinicius Veloso
-Desenvolvedor .NET | Evolu��o cont�nua ?
+Desenvolvedor .NET | Evolução contínua ⚡
