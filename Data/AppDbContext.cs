@@ -1,6 +1,11 @@
-﻿namespace TaskApi.Data
+﻿using Microsoft.EntityFrameworkCore;
+using TaskApi.Models;
+
+namespace TaskApi.Data;
+
+public class AppDbContext : DbContext
 {
-    public class AppDbContext
-    {
-    }
+    public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
+
+    public DbSet<TaskItem> Tasks => Set<TaskItem>();
 }
